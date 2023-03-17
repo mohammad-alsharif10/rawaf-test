@@ -3,6 +3,9 @@ package com.weather.generator;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+/**
+ * @author mohammad Alsharif
+ */
 @SpringBootApplication
 public class WeatherGeneratorApplication {
 

@@ -5,6 +5,7 @@
       <list>
         <option value="$PROJECT_DIR$/weather-generator/pom.xml" />
         <option value="$PROJECT_DIR$/ingestion/pom.xml" />
+        <option value="$PROJECT_DIR$/weather-monitor/pom.xml" />
       </list>
     </option>
   </component>

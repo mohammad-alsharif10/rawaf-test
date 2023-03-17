@@ -20,6 +20,4 @@ public class WeatherEventModel {
     private Long latitude;
     private Long degree;
     private Long weatherEventTime;
-
-
 }

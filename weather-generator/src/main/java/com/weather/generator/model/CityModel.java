@@ -1,11 +1,10 @@
 package com.weather.generator.model;
 
+
 import lombok.AllArgsConstructor;
 import lombok.Builder;
 import lombok.Data;
 import lombok.NoArgsConstructor;
-
-import java.util.Date;
 
 /**
  * @author mohammad
@@ -15,11 +14,9 @@ import java.util.Date;
 @NoArgsConstructor
 @Builder
 @Data
-public class WeatherEventModel {
-    private Long weatherEventId;
+public class CityModel {
+
     private String locationName;
     private Integer longitude;
     private Integer latitude;
-    private Integer degree;
-    private Date weatherEventTime;
 }

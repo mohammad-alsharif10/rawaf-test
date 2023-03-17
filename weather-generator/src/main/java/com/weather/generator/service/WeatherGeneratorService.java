@@ -1,5 +1,6 @@
 package com.weather.generator.service;
 
+import com.weather.generator.util.Constants;
 import lombok.RequiredArgsConstructor;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
@@ -22,8 +23,10 @@ public class WeatherGeneratorService {
         Observable.interval(10, TimeUnit.SECONDS, Schedulers.io())
                 .observeOn(Schedulers.io())
                 .map(event -> {
+                    Constants.CITY_MODELS.forEach(cityModel -> {
 
-                    return "";
+                    });
+                    return "DONE";
                 })
                 .doOnError(this::handleCommunicationFailure)
                 .retry()

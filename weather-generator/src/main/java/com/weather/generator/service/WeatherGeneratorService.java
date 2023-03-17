@@ -11,7 +11,7 @@ import rx.schedulers.Schedulers;
 import java.util.concurrent.TimeUnit;
 
 /**
- * @author mohammad Alsharid
+ * @author mohammad
  */
 @Service
 @RequiredArgsConstructor
@@ -24,7 +24,6 @@ public class WeatherGeneratorService {
                 .observeOn(Schedulers.io())
                 .map(event -> {
                     Constants.CITY_MODELS.forEach(cityModel -> {
-
                     });
                     return "DONE";
                 })

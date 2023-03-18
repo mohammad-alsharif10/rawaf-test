@@ -1,9 +1,8 @@
-package com.weather.generator.model;
+package com.weather.monitor.entity;
 
-import lombok.AllArgsConstructor;
-import lombok.Builder;
-import lombok.Data;
-import lombok.NoArgsConstructor;
+import jakarta.persistence.Entity;
+import jakarta.persistence.Id;
+import lombok.*;
 
 import java.util.Date;
 
@@ -14,8 +13,11 @@ import java.util.Date;
 @AllArgsConstructor
 @NoArgsConstructor
 @Builder
-@Data
-public class WeatherEventModel {
+@Getter
+@Setter
+@Entity
+public class WeatherEvent {
+    @Id
     private Long id;
     private String weatherEventUuId;
     private String locationName;

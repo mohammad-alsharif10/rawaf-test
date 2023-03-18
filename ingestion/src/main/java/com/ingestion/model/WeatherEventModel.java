@@ -1,4 +1,4 @@
-package com.weather.generator.model;
+package com.ingestion.model;
 
 import lombok.AllArgsConstructor;
 import lombok.Builder;

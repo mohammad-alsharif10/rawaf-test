@@ -4,22 +4,15 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69e49f46-4756-41fa-9e16-920184d8bff8" name="Changes" comment="adding three services">
-      <change afterPath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/config/BeanConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/controller/IngestionController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/model/CityModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/model/WeatherEventModel.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/service/IngestionService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/util/Constants.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/config/BeanConfig.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/entity/WeatherEvent.java" afterDir="false" />
+    <list default="true" id="69e49f46-4756-41fa-9e16-920184d8bff8" name="Changes" comment="finish ingestion service">
+      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/config/BeanConfig.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/controller/WeatherMonitorController.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/model/CityModel.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/service/WeatherMonitorService.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/util/Constants.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/IngestionApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/src/main/java/com/ingestion/IngestionApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingestion/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/WeatherGeneratorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/WeatherGeneratorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/model/WeatherEventModel.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/model/WeatherEventModel.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/service/WeatherGeneratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/service/WeatherGeneratorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-monitor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/pom.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/entity/WeatherEvent.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/entity/WeatherEvent.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -35,6 +28,7 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
+        <option value="com.haulmont.jpb.JpaRepository" />
         <option value="Class" />
       </list>
     </option>
@@ -97,7 +91,7 @@
     "SONARLINT_PRECOMMIT_ANALYSIS": "true",
     "WebServerToolWindowFactoryState": "false",
     "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "G:/projects/tests/rawaf-test/ingestion/src/main/java/com/ingestion",
+    "last_opened_file_path": "G:/projects/tests/rawaf-test/weather-monitor/src/main/java/com/weather/monitor",
     "node.js.detected.package.eslint": "true",
     "node.js.detected.package.tslint": "true",
     "node.js.selected.package.eslint": "(autodetect)",
@@ -113,10 +107,12 @@
 }]]></component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="G:\projects\tests\rawaf-test\weather-monitor\src\main\java\com\weather\monitor" />
       <recent name="G:\projects\tests\rawaf-test\ingestion\src\main\java\com\ingestion" />
       <recent name="G:\projects\tests\rawaf-test" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="com.weather.monitor.model" />
       <recent name="com.weather.monitor.entity" />
       <recent name="com.ingestion.model" />
       <recent name="com.ingestion.config" />
@@ -168,7 +164,7 @@
       <workItem from="1679056182629" duration="230000" />
       <workItem from="1679056428543" duration="1002000" />
       <workItem from="1679057505866" duration="5970000" />
-      <workItem from="1679068586157" duration="10812000" />
+      <workItem from="1679068586157" duration="16316000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1679057009235</created>
@@ -205,7 +201,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679075491082</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="finish ingestion service">
+      <created>1679144625300</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1679144625300</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -220,7 +223,8 @@
     <MESSAGE value="init" />
     <MESSAGE value="init weather generation" />
     <MESSAGE value="adding three services" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding three services" />
+    <MESSAGE value="finish ingestion service" />
+    <option name="LAST_COMMIT_MESSAGE" value="finish ingestion service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>

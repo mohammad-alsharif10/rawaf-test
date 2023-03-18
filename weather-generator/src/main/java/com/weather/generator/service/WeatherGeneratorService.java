@@ -31,7 +31,7 @@ public class WeatherGeneratorService {
     private final Random random = new Random();
     private final RestTemplate restTemplate;
 
-    @Value("${local.host.value}")
+    @Value("${ingestion.service.domain}")
     private String localHostValue;
 
     public void generateWeatherData() {

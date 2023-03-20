@@ -13,6 +13,8 @@ import org.springframework.kafka.support.KafkaHeaders;
 import org.springframework.messaging.handler.annotation.Header;
 import org.springframework.stereotype.Service;
 
+import java.util.List;
+
 /**
  * @author mohammad
  */
@@ -28,8 +30,12 @@ public class WeatherMonitorService {
 
     @KafkaListener(topicPattern = "\\bcity.*\\b", id = Constants.NO_GROUP)
     public void consumeWeatherData(String weatherDataEvent, @Header(KafkaHeaders.RECEIVED_TOPIC) String topic) throws JsonProcessingException {
-        logger.info("consumed data from kafka {} from topic {}",weatherDataEvent,topic);
+        logger.info("consumed data from kafka {} from topic {}", weatherDataEvent, topic);
         WeatherEvent weatherEvent = objectMapper.readValue(weatherDataEvent, WeatherEvent.class);
         weatherEventRepository.save(weatherEvent);
+    }
+
+    public List<WeatherEvent> getAllWeatherEvents() {
+        return weatherEventRepository.findAll();
     }
 }

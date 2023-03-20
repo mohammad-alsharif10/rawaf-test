@@ -4,24 +4,18 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69e49f46-4756-41fa-9e16-920184d8bff8" name="Changes" comment="adjusting docker compose">
-      <change afterPath="$PROJECT_DIR$/generated-requests.http" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/controller/AuthenticationController.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/entity/Role.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/entity/User.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/model/AuthenticationRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/model/AuthenticationResponse.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/model/RegisterRequest.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/repository/UserRepository.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/security/JwtAuthenticationFilter.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/security/JwtService.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/security/SecurityConfiguration.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/service/AuthenticationService.java" afterDir="false" />
+    <list default="true" id="69e49f46-4756-41fa-9e16-920184d8bff8" name="Changes" comment="adding security">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-monitor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/WeatherMonitorApplication.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/WeatherMonitorApplication.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/config/BeanConfig.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/config/BeanConfig.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated-requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/generated-requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-generator/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/dockerfile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-generator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/src/main/resources/application.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-monitor/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/controller/WeatherMonitorController.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/controller/WeatherMonitorController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/security/JwtAuthenticationFilter.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/security/JwtAuthenticationFilter.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/security/JwtService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/security/JwtService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/service/WeatherMonitorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/service/WeatherMonitorService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -92,37 +86,37 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RequestMappingsPanelOrder0": "0",
-    "RequestMappingsPanelOrder1": "1",
-    "RequestMappingsPanelWidth0": "75",
-    "RequestMappingsPanelWidth1": "75",
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "SONARLINT_PRECOMMIT_ANALYSIS": "true",
-    "WebServerToolWindowFactoryState": "false",
-    "jdk.selected.JAVA_MODULE": "17",
-    "last_opened_file_path": "G:/projects/tests/rawaf-test",
-    "node.js.detected.package.eslint": "true",
-    "node.js.detected.package.tslint": "true",
-    "node.js.selected.package.eslint": "(autodetect)",
-    "node.js.selected.package.tslint": "(autodetect)",
-    "nodejs_package_manager_path": "npm",
-    "project.structure.last.edited": "Modules",
-    "project.structure.proportion": "0.15",
-    "project.structure.side.proportion": "0.2",
-    "settings.editor.selected.configurable": "preferences.pluginManager",
-    "spring.configuration.checksum": "2ba7cc3d10bd391d137dc8da2371679a",
-    "typescript.add.unambiguous.imports.on.the.fly": "true",
-    "vue.rearranger.settings.migration": "true"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RequestMappingsPanelOrder0&quot;: &quot;0&quot;,
+    &quot;RequestMappingsPanelOrder1&quot;: &quot;1&quot;,
+    &quot;RequestMappingsPanelWidth0&quot;: &quot;75&quot;,
+    &quot;RequestMappingsPanelWidth1&quot;: &quot;75&quot;,
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SONARLINT_PRECOMMIT_ANALYSIS&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;jdk.selected.JAVA_MODULE&quot;: &quot;17&quot;,
+    &quot;last_opened_file_path&quot;: &quot;G:/projects/tests/rawaf-test&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Modules&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.15&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;,
+    &quot;settings.editor.selected.configurable&quot;: &quot;preferences.pluginManager&quot;,
+    &quot;spring.configuration.checksum&quot;: &quot;2ba7cc3d10bd391d137dc8da2371679a&quot;,
+    &quot;typescript.add.unambiguous.imports.on.the.fly&quot;: &quot;true&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   },
-  "keyToStringList": {
-    "DatabaseDriversLRU": [
-      "postgresql"
+  &quot;keyToStringList&quot;: {
+    &quot;DatabaseDriversLRU&quot;: [
+      &quot;postgresql&quot;
     ]
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="G:\projects\tests\rawaf-test" />
@@ -145,11 +139,14 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #2">
-    <configuration name="generated-requests | #1" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" requestIdentifier="#1" runType="Run single request">
+  <component name="RunManager" selected="HTTP Request.generated-requests | #4">
+    <configuration name="generated-requests | #2 (1)" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
       <method v="2" />
     </configuration>
-    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+    <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
+      <method v="2" />
+    </configuration>
+    <configuration name="generated-requests | #4" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="4" requestIdentifier="#4" runType="Run single request">
       <method v="2" />
     </configuration>
     <configuration name="Ingestion" type="SpringBootApplicationConfigurationType" factoryName="Spring Boot">
@@ -212,33 +209,23 @@
       </deployment>
       <method v="2" />
     </configuration>
-    <configuration name="weather-monitor/Dockerfile" type="docker-deploy" factoryName="dockerfile" temporary="true" server-name="Docker">
-      <deployment type="dockerfile">
-        <settings>
-          <option name="imageTag" value="weather-monitor-image" />
-          <option name="containerName" value="weather-monitor-app" />
-          <option name="sourceFilePath" value="weather-monitor/Dockerfile" />
-        </settings>
-      </deployment>
-      <method v="2" />
-    </configuration>
     <list>
       <item itemvalue="Docker.docker-compose.yaml.db: Compose Deployment" />
       <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
-      <item itemvalue="Docker.weather-monitor/Dockerfile" />
-      <item itemvalue="HTTP Request.generated-requests | #1" />
-      <item itemvalue="HTTP Request.generated-requests | #2" />
+      <item itemvalue="HTTP Request.generated-requests | #2 (1)" />
+      <item itemvalue="HTTP Request.generated-requests | #4" />
+      <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="Spring Boot.WeatherMonitor" />
       <item itemvalue="Spring Boot.Ingestion" />
       <item itemvalue="Spring Boot.WeatherGenerator" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="HTTP Request.generated-requests | #2" />
-        <item itemvalue="HTTP Request.generated-requests | #1" />
-        <item itemvalue="Docker.docker-compose.yaml.db: Compose Deployment" />
+        <item itemvalue="HTTP Request.generated-requests | #4" />
+        <item itemvalue="HTTP Request.generated-requests | #2 (1)" />
         <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
-        <item itemvalue="Docker.weather-monitor/Dockerfile" />
+        <item itemvalue="Docker.docker-compose.yaml.db: Compose Deployment" />
+        <item itemvalue="HTTP Request.generated-requests | #3" />
       </list>
     </recent_temporary>
   </component>
@@ -255,7 +242,8 @@
       <workItem from="1679057505866" duration="5970000" />
       <workItem from="1679068586157" duration="18832000" />
       <workItem from="1679155890774" duration="5503000" />
-      <workItem from="1679332370632" duration="4846000" />
+      <workItem from="1679332370632" duration="8397000" />
+      <workItem from="1679341964022" duration="2129000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1679057009235</created>
@@ -327,7 +315,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679331440526</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="adding security">
+      <created>1679338792422</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1679338792422</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -347,18 +342,8 @@
     <MESSAGE value="adding docker files" />
     <MESSAGE value="running environment from docker compose" />
     <MESSAGE value="adjusting docker compose" />
-    <option name="LAST_COMMIT_MESSAGE" value="adjusting docker compose" />
-  </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/weather-monitor/src/main/java/com/weather/monitor/service/AuthenticationService.java</url>
-          <line>35</line>
-          <option name="timeStamp" value="1" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+    <MESSAGE value="adding security" />
+    <option name="LAST_COMMIT_MESSAGE" value="adding security" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

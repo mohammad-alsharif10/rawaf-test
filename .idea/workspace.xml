@@ -4,18 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="69e49f46-4756-41fa-9e16-920184d8bff8" name="Changes" comment="adding docker files">
+    <list default="true" id="69e49f46-4756-41fa-9e16-920184d8bff8" name="Changes" comment="running environment from docker compose">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingestion/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ingestion/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-generator/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-generator/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/service/WeatherGeneratorService.java" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/src/main/java/com/weather/generator/service/WeatherGeneratorService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-generator/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/src/main/resources/application.properties" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-monitor/Dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/dockerfile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-monitor/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/weather-monitor/src/main/resources/application.properties" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/src/main/resources/application.properties" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -237,7 +228,7 @@
       <workItem from="1679056428543" duration="1002000" />
       <workItem from="1679057505866" duration="5970000" />
       <workItem from="1679068586157" duration="18832000" />
-      <workItem from="1679155890774" duration="2145000" />
+      <workItem from="1679155890774" duration="4809000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1679057009235</created>
@@ -295,7 +286,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679154086049</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="running environment from docker compose">
+      <created>1679158330384</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679158330384</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +311,8 @@
     <MESSAGE value="finish ingestion service" />
     <MESSAGE value="adding monitor service" />
     <MESSAGE value="adding docker files" />
-    <option name="LAST_COMMIT_MESSAGE" value="adding docker files" />
+    <MESSAGE value="running environment from docker compose" />
+    <option name="LAST_COMMIT_MESSAGE" value="running environment from docker compose" />
   </component>
   <component name="XSLT-Support.FileAssociations.UIState">
     <expand />

@@ -17,7 +17,7 @@ services:
     environment:
       DB_URL: jdbc:postgresql://db:5432/postgres
     ports:
-      - '8082:8082'
+      - '8080:8080'
     depends_on:
       - db
 
@@ -38,8 +38,9 @@ services:
     restart: always
     environment:
       INGESTION_SERVICE_DOMAIN: ingestion
+      INGESTION_SERVICE_PORT: 8081
     ports:
-      - '8080:8080'
+      - '8082:8082'
     depends_on:
       - ingestion
 

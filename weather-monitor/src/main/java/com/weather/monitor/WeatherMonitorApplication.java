@@ -19,24 +19,24 @@ import java.util.Optional;
 @RequiredArgsConstructor
 public class WeatherMonitorApplication {
 
-	private final AuthenticationService authenticationService;
-	private final UserRepository userRepository;
+    private final AuthenticationService authenticationService;
+    private final UserRepository userRepository;
 
-	public static void main(String[] args) {
-		SpringApplication.run(WeatherMonitorApplication.class, args);
-	}
+    public static void main(String[] args) {
+        SpringApplication.run(WeatherMonitorApplication.class, args);
+    }
 
-	@Bean
-	public CommandLineRunner commandLineRunner(){
-		return args -> {
-			Optional<User> optionalUser = userRepository.findByEmail("test_4609cbdcc160");
-			if (optionalUser.isEmpty()){
-				authenticationService.register(RegisterRequest.builder()
-						.email("test_4609cbdcc160")
-						.password("test_0d1b253cf339")
-						.build());
-			}
-		};
-	}
+    @Bean
+    public CommandLineRunner commandLineRunner() {
+        return args -> {
+            Optional<User> optionalUser = userRepository.findByEmail("test_4609cbdcc160");
+            if (optionalUser.isEmpty()) {
+                authenticationService.register(RegisterRequest.builder()
+                        .email("test_4609cbdcc160")
+                        .password("test_0d1b253cf339")
+                        .build());
+            }
+        };
+    }
 
 }

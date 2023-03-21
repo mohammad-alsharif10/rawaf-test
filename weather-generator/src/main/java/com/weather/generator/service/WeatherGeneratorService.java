@@ -32,7 +32,10 @@ public class WeatherGeneratorService {
     private final RestTemplate restTemplate;
 
     @Value("${ingestion.service.domain}")
-    private String localHostValue;
+    private String ingestionServiceDomain;
+
+    @Value("${ingestion.service.port}")
+    private String ingestionServicePort;
 
     public void generateWeatherData() {
         Observable.interval(10, TimeUnit.SECONDS, Schedulers.io())
@@ -47,7 +50,7 @@ public class WeatherGeneratorService {
                                 .locationName(cityModel.getLocationName())
                                 .build();
                         HttpEntity<WeatherEventModel> weatherEventModelHttpEntity = new HttpEntity<>(weatherEventModel);
-                        ResponseEntity<String> exchange = restTemplate.exchange("http://"+localHostValue + ":8081/ingestion/ingestWeatherEvent", HttpMethod.POST, weatherEventModelHttpEntity, String.class);
+                        ResponseEntity<String> exchange = restTemplate.exchange("http://"+ ingestionServiceDomain +":"+ ingestionServicePort+"/ingestion/ingestWeatherEvent", HttpMethod.POST, weatherEventModelHttpEntity, String.class);
                         logger.info(String.format("event fired ->{ %s } with response -> { %s }", weatherEventModel, exchange.getBody()));
                     });
                     return "DONE";

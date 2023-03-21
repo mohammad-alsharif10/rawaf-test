@@ -21,8 +21,9 @@ public class WeatherGeneratorApplication {
     }
 
     @Bean
-    public CommandLineRunner commandLineRunner(){
+    public CommandLineRunner commandLineRunner() {
         return args -> weatherGeneratorService.generateWeatherData();
     }
+
 
 }

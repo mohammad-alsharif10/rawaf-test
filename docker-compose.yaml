@@ -14,6 +14,8 @@ services:
       context: ./weather-monitor
       dockerfile: dockerfile
     restart: always
+    command:
+      -
     environment:
       DB_URL: jdbc:postgresql://db:5432/postgres
     ports:

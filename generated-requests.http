@@ -1,13 +1,5 @@
 ###
-POST http://localhost:8080/auth/register
-Content-Type: application/json
 
-{
-  "firstname": "test_fa4e6329afe9",
-  "lastname": "test_9d0893c18c98",
-  "email": "test_4609cbdcc160",
-  "password": "test_0d1b253cf339"
-}
 
 <> 2023-03-20T202050.200.json
 
@@ -20,4 +12,41 @@ Content-Type: application/json
   "password": "test_0d1b253cf339"
 }
 
+<> 2023-03-21T202933.200.json
+<> 2023-03-20T211425.200.json
+<> 2023-03-20T211234.200.json
+<> 2023-03-20T210940.200.json
 <> 2023-03-20T202330.200.json
+
+
+###
+GET http://localhost:8080/weather-monitor/findAll
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiJ9.eyJzdWIiOiJ0ZXN0XzQ2MDljYmRjYzE2MCIsImlhdCI6MTY3OTQyMzM3MywiZXhwIjoxNjgwODYzMzczfQ.npPKhSK-i1oTvoD1pj42jFMaU1wffxvNRWDMQB6vUq8
+
+<> 2023-03-21T202954.200.json
+<> 2023-03-21T191447.200.json
+<> 2023-03-21T191333.404.json
+<> 2023-03-21T183752.404.json
+<> 2023-03-20T220031.404.json
+<> 2023-03-20T211504.200.json
+
+###
+POST http://localhost:8081/ingestion/ingestWeatherEvent
+Content-Type: application/json
+
+{
+  "id": 38,
+  "weatherEventUuId": "test_600e5cb023f5",
+  "locationName": "test_ae0448f23949",
+  "longitude": 43,
+  "latitude": 4,
+  "degree": 17
+}
+
+<> 2023-03-20T223743.500.json
+<> 2023-03-20T223623.500.json
+<> 2023-03-20T222658.400.json
+
+###
+###

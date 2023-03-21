@@ -5,8 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="69e49f46-4756-41fa-9e16-920184d8bff8" name="Changes" comment="done">
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/docker-compose.yaml" beforeDir="false" afterPath="$PROJECT_DIR$/docker-compose.yaml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/generated-requests.http" beforeDir="false" afterPath="$PROJECT_DIR$/generated-requests.http" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ingestion/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/ingestion/dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-generator/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-generator/dockerfile" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/weather-monitor/dockerfile" beforeDir="false" afterPath="$PROJECT_DIR$/weather-monitor/dockerfile" afterDir="false" />
     </list>
@@ -132,7 +133,10 @@
       </set>
     </option>
   </component>
-  <component name="RunManager" selected="HTTP Request.generated-requests | #3">
+  <component name="RunManager" selected="Docker.docker-compose.yaml: Compose Deployment">
+    <configuration name="generated-requests | #2" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$PROJECT_DIR$/generated-requests.http" index="2" requestIdentifier="#2" runType="Run single request">
+      <method v="2" />
+    </configuration>
     <configuration name="generated-requests | #3" type="HttpClient.HttpRequestRunConfigurationType" factoryName="HTTP Request" temporary="true" nameIsGenerated="true" path="$APPLICATION_CONFIG_DIR$/scratches/generated-requests.http" index="3" requestIdentifier="#3" runType="Run single request">
       <method v="2" />
     </configuration>
@@ -175,7 +179,17 @@
       </deployment>
       <method v="2" />
     </configuration>
+    <configuration name="docker-compose.yaml: Compose Deployment" type="docker-deploy" factoryName="docker-compose.yml" temporary="true" server-name="Docker">
+      <deployment type="docker-compose.yml">
+        <settings>
+          <option name="sourceFilePath" value="docker-compose.yaml" />
+        </settings>
+      </deployment>
+      <method v="2" />
+    </configuration>
     <list>
+      <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+      <item itemvalue="HTTP Request.generated-requests | #2" />
       <item itemvalue="HTTP Request.generated-requests | #3" />
       <item itemvalue="Spring Boot.WeatherMonitor" />
       <item itemvalue="Spring Boot.Ingestion" />
@@ -183,6 +197,8 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Docker.docker-compose.yaml: Compose Deployment" />
+        <item itemvalue="HTTP Request.generated-requests | #2" />
         <item itemvalue="HTTP Request.generated-requests | #3" />
       </list>
     </recent_temporary>
@@ -202,7 +218,7 @@
       <workItem from="1679155890774" duration="5503000" />
       <workItem from="1679332370632" duration="8397000" />
       <workItem from="1679341964022" duration="2129000" />
-      <workItem from="1679415192073" duration="5196000" />
+      <workItem from="1679415192073" duration="7740000" />
     </task>
     <task id="LOCAL-00001" summary="init">
       <created>1679057009235</created>
@@ -288,11 +304,29 @@
       <option name="project" value="LOCAL" />
       <updated>1679419564448</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="done">
+      <created>1679420463769</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1679420463769</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.History.Properties">
+    <option name="COLUMN_ID_ORDER">
+      <list>
+        <option value="Default.Root" />
+        <option value="Default.Author" />
+        <option value="Default.Date" />
+        <option value="Default.Subject" />
+        <option value="Space.CommitStatus" />
+      </list>
+    </option>
   </component>
   <component name="VcsManagerConfiguration">
     <ignored-roots>
